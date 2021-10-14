@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calc-wrapper">
+            <div class="title">
+                <h2>calc</h2>
+                <small>THEME</small>
+                <div class="theme-btn" onclick="changeTheme()">
+                    <span class="switch-btn"></span>
+                </div>
+            </div>
+            <div class="display">
+                <input id="display" type="text" disabled value="">
+            </div>
+            <div class="btn-wrapper">
+                <div class="input-wrapper">
+                    <input type="button" value="7" onclick="typeNum(this.value)">
+                    <input type="button" value="8" onclick="typeNum(this.value)">
+                    <input type="button" value="9" onclick="typeNum(this.value)">
+                    <input id="del" type="button" value="DEL" onclick="del()">
+                    <input type="button" value="4" onclick="typeNum(this.value)">
+                    <input type="button" value="5" onclick="typeNum(this.value)">
+                    <input type="button" value="6" onclick="typeNum(this.value)">
+                    <input type="button" value="+" onclick="typeNum(this.value)">
+                    <input type="button" value="1" onclick="typeNum(this.value)">
+                    <input type="button" value="2" onclick="typeNum(this.value)">
+                    <input type="button" value="3" onclick="typeNum(this.value)">
+                    <input type="button" value="-" onclick="typeNum(this.value)">
+                    <input type="button" value="." onclick="typeNum(this.value)">
+                    <input type="button" value="0" onclick="typeNum(this.value)">
+                    <input type="button" value="/" onclick="typeNum(this.value)">
+                    <input type="button" value="*" onclick="typeNum(this.value)">
+                    <input id="reset" class="reset" type="button" value="RESET" onclick="reset()">
+                    <input id="equal" type="button" value="=" onclick="equal()">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
